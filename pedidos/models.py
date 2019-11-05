@@ -8,7 +8,7 @@ class Producto(models.Model):
     descripcion = models.CharField(max_length=400, default="")
     activo = models.BooleanField()
 
-class Cliente(models.Model):
+class Tenant(models.Model):
     name= models.CharField(max_length=150, default="")
     RFC=models.CharField(max_length=18, default="000-000-000")
     email= models.CharField(max_length=150, default="")
